@@ -1,0 +1,406 @@
+<html>
+<head>
+
+    <title>GYAN TODAY</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+            color: #222;
+        }
+        header {
+            background: linear-gradient(90deg, #111827, #2563eb);
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #facc15;
+        }
+        nav {
+            background: #ffffff;
+            padding: 15px 8%;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+        .breaking {
+            background: #ef4444;
+            color: white;
+            padding: 12px 8%;
+            font-weight: bold;
+        }
+        .container {
+            width: 84%;
+            margin: 30px auto;
+        }
+
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #111827;
+            border-left: 6px solid #2563eb;
+            padding-left: 12px;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .category {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        .technology {
+            background: #9333ea;
+        }
+
+        .sports {
+            background: #16a34a;
+        }
+
+        .business {
+            background: #ea580c;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 15px;
+            color: #2563eb;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .featured {
+            margin-top: 40px;
+            background: linear-gradient(135deg, #1e3a8a, #7c3aed);
+            color: white;
+            border-radius: 20px;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .featured-text {
+            flex: 1;
+        }
+
+        .featured h2 {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .featured p {
+            line-height: 1.7;
+        }
+
+        .featured button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            background: #facc15;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .featured button:hover {
+            background: white;
+        }
+        footer {
+            margin-top: 50px;
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        footer p {
+            margin: 8px;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+           GYAN NEWS <span>TODAY</span>
+        </div>
+
+        <div>
+            📰 Latest News • 24/7
+        </div>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">India</a>
+        <a href="#">World</a>
+        <a href="#">Technology</a>
+        <a href="#">Sports</a>
+        <a href="#">Business</a>
+        <a href="#">Entertainment</a>
+    </nav>
+    <div class="breaking">
+     BREAKING NEWS: Welcome to GYAN NEWS TODAY — Latest headlines and updates
+    </div>
+    <div class="container">
+
+        <h2 class="section-title">Latest News</h2>
+
+        <div class="news-grid">
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c">
+
+                <div class="card-content">
+
+                    <span class="category">WORLD</span>
+
+                    <h3>Global News and Important Events</h3>
+
+                    <p>
+                        Stay updated with the latest developments
+                        happening around the world.
+                    </p>
+
+                    <span class="read-more"
+                        onclick="alert('You clicked World News!')">
+                        Read More →
+                    </span>
+
+                </div>
+            </div>
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+
+                <div class="card-content">
+
+                    <span class="category technology">
+                        TECHNOLOGY
+                    </span>
+
+                    <h3>New Technology Changing the World</h3>
+
+                    <p>
+                        Discover the latest technology,
+                        artificial intelligence and innovation.
+                    </p>
+
+                    <span class="read-more"
+                        onclick="alert('You clicked Technology News!')">
+                        Read More →
+                    </span>
+
+                </div>
+            </div>
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211">
+
+                <div class="card-content">
+
+                    <span class="category sports">
+                        SPORTS
+                    </span>
+
+                    <h3>Latest Sports Updates</h3>
+
+                    <p>
+                        Get the latest scores, tournaments
+                        and sports updates.
+                    </p>
+
+                    <span class="read-more"
+                        onclick="alert('You clicked Sports News!')">
+                        Read More →
+                    </span>
+
+                </div>
+            </div>
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e">
+
+                <div class="card-content">
+
+                    <span class="category business">
+                        BUSINESS
+                    </span>
+
+                    <h3>Business and Market Updates</h3>
+
+                    <p>
+                        Follow business trends, companies
+                        and financial markets.
+                    </p>
+
+                    <span class="read-more"
+                        onclick="alert('You clicked Business News!')">
+                        Read More →
+                    </span>
+
+                </div>
+            </div>
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819">
+
+                <div class="card-content">
+
+                    <span class="category"
+                        style="background:#db2777;">
+                        ENTERTAINMENT
+                    </span>
+
+                    <h3>Entertainment News</h3>
+
+                    <p>
+                        Movies, music, celebrities and
+                        entertainment stories.
+                    </p>
+
+                    <span class="read-more"
+                        onclick="alert('You clicked Entertainment News!')">
+                        Read More →
+                    </span>
+
+                </div>
+            </div>
+            <div class="card">
+
+                <img src="https://images.unsplash.com/photo-1495020689067-958852a7765e">
+
+                <div class="card-content">
+
+                    <span class="category"
+                        style="background:#0891b2;">
+                        INDIA
+                    </span>
+
+                    <h3>Latest News From India</h3>
+
+                    <p>
+                        Get important updates and headlines
+                        from across India.
+                    </p>
+
+                    <span class="read-more"
+                        onclick="alert('You clicked India News!')">
+                        Read More →
+                    </span>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="featured">
+
+            <div class="featured-text">
+
+                <h2>Today's Featured Story</h2>
+
+                <p>
+                    Explore the biggest stories, latest updates
+                    and important events from around the world
+                    with News Today.
+                </p>
+
+                <button onclick="showMessage()">
+                    Explore Story
+                </button>
+
+            </div>
+
+            <div style="font-size:100px;">
+                📰
+            </div>
+
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Urz0BHM1Wo8?si=F_UIJaShU9Haj4X-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </div>
+    <gyan2>
+
+        <h2>NEWS TODAY</h2>
+
+        <p>Your daily source for the latest news.</p>
+
+        <p>© 2026 News Today | All Rights Reserved</p>
+
+    </gyan>
+</body>
+</html>
